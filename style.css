@@ -570,6 +570,10 @@ footer {
 
 @media (max-width: 750px) {
 
+	header {
+		border-radius: 0px 0px 0px 0px;
+	}
+
 	.empty-logo,
 	.nav-list,
 	.auth {
