@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Events</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Header ------------------------------------------------------------------------------------------------------------- -->
+		<header>
+			<div class="empty-logo"></div>
+			<nav>
+				<ul class="nav-list">
+					<li>Події</li>
+					<li>Товари</li>
+					<li>Клієнти</li>
+				</ul>
+			</nav>
+
+			<div class="auth">
+				<div class="auth-photo">
+					<img src="./img/image 1.png" alt="face-logo">
+				</div>
+				<div class="auth-email">admin@okguru.com</div>
+				<div class="auth-button">
+					<img src="./img/Exit.png" alt="exit">
+				</div>
+			</div>
+		</header>
+
+		<!-- Main -------------------------------------------------------------------------------------------------------------------- -->
+		<main>
+			<h1>Створення події</h1>
+
+			<div class="main-row">
+				<div class="main-column column-1">
+					<div class="main-column-item">
+						<label for="input_1" class="main-column-label"><span>Назва події</span></label><br>
+						<input type="text" id="input_1" name="eventNameInput" placeholder="Введіть назву">
+					</div>
+
+					<div class="main-column-item">
+						<label for="input_2" class="main-column-label"><span>Ім'я ведучого</span></label><br>
+						<input type="text" id="input_2" name="nameInput" placeholder="Введіть ім'я">
+					</div>
+
+					<div class="main-column-item">
+						<label for="input_3" class="main-column-label"><span>Дата і час початку</span></label><br>
+						<div class="date-inputs">
+							<input type="date" id="input_3" name="dateInput">
+							<input type="time" id="input_4" name="timeInput">
+						</div>
+
+					</div>
+
+					<div class="main-column-item">
+						<label for="input_5" class="main-column-label"><span>Посилання на YouTube трансляцію</span></label><br>
+						<input type="text" id="input_5" name="streamInput" placeholder="Вставте посилання">
+					</div>
+
+					<div class="main-column-item">
+						<label for="input_6" class="main-column-label"><span>Посилання на заглушку</span></label><br>
+						<input type="text" id="input_6" name="plugInput" placeholder="Вставте посилання">
+					</div>
+
+					<div class="main-column-item">
+						<label for="input_7" class="main-column-label"><span>Зовнішня кнопка (посилання)</span></label><br>
+						<input type="text" id="input_7" name="outInput" placeholder="Вставте посилання">
+					</div>
+				</div>
+
+				<div class="main-column column-2">
+					<div class="main-column-item radio">
+						<p class="main-radio-label"><span>Доступ до події</span></p>
+
+						<div class="main-radio-item">
+							<input id="radio_1" checked type="radio" name="nameRadio">
+							<label for="radio_1" class="main-radio-label">По паролям</label>
+						</div>
+
+						<div class="main-radio-item">
+							<input id="radio_2" type="radio" name="nameRadio">
+							<label for="radio_2" class="main-radio-label">Відкритий</label>
+						</div>
+					</div>
+
+					<div class="main-column-item switch">
+						<div class="item-switch">
+							<p class="switch-text">Чат під час запуску події</p>
+							<div class="switch-button">
+								<input checked type="checkbox" id="switch-1" class="switch-input">
+								<label class="switch-label" for="switch-1"></label>
+							</div>
+						</div>
+
+						<div class="item-switch">
+							<p class="switch-text">Клікабельні посилання від користувачів у чаті</p>
+							<div class="switch-button">
+								<input type="checkbox" id="switch-2" class="switch-input">
+								<label class="switch-label" for="switch-2"></label>
+							</div>
+						</div>
+
+						<div class="item-switch">
+							<p class="switch-text">Кошик</p>
+							<div class="switch-button">
+								<input checked type="checkbox" id="switch-3" class="switch-input">
+								<label class="switch-label" for="switch-3"></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-column-item file">
+						<p class="main-column-label"><span>Презентація:</span></p>
+
+						<div class="file-item">
+							<input class="file__input" accept=".jpg, .jpeg, .png, .pdf" id="file_1" type="file" name="nameFile">
+
+							<div class="file__button">
+								<span>Завантажити PDF</span>
+								<img src="./img/Download.png" alt="button">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="main-column-item">
+						<p class="main-column-label">Додаткові обов'язкові поля на вході:</p>
+
+						<div class="check-item">
+							<input class="checkbox__input" checked id="check_1" type="checkbox" name="lastnameCheck">
+							<label for="check_1" class="checkbox__label"><span>Прізвище</span></label>
+						</div>
+
+						<div class="check-item">
+							<input class="checkbox__input" checked id="check_2" type="checkbox" name="cityCheck">
+							<label for="check_2" class="checkbox__label"><span>Місто</span></label>
+						</div>
+
+						<div class="check-item">
+							<input class="checkbox__input" id="check_3" type="checkbox" name="emailCheck">
+							<label for="check_3" class="checkbox__label"><span>Email</span></label>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="file__button save-button">
+				<span>Зберегти</span>
+			</div>
+
+		</main>
+
+		<!-- Footer --------------------------------------------------------------------------------------------------------------- -->
+		<footer>
+			<div class="footer-text">Trade Broadcast 2022 ©</div>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
