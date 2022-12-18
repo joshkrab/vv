@@ -177,6 +177,7 @@ nav {
 /* Burger ---------------------------------------------- */
 
 .burger-icon {
+	display: none;
 	position: absolute;
 	top: 30px;
 	left: 30px;
@@ -565,4 +566,32 @@ footer {
 	font-weight: 400;
 	color: #BDBDBD;
 	;
+}
+
+@media (max-width: 750px) {
+
+	.empty-logo,
+	.nav-list,
+	.auth {
+		display: none;
+	}
+
+	.burger-icon {
+		display: block;
+	}
+
+	.main-row {
+		display: block;
+	}
+
+	main {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.main-column {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
 }
