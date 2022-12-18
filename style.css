@@ -382,19 +382,21 @@ h1 {
 	content: '';
 	flex: 0 0 24px;
 	height: 24px;
-	background-color: #0D63F3;
-	align-self: flex-start;
 	border-radius: 50%;
+	background-color: #fff;
+	border: 1.5px solid #0D63F3;
+	align-self: flex-start;
 	margin: 0px 10px 0px 0px;
 }
 
 .checkbox__label::after {
 	content: '';
 	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 17px;
-	height: 17px;
+	top: 0px;
+	left: 0px;
+	width: 24px;
+	height: 24px;
+	background-color: #0D63F3;
 	background-image: url("./img/Vector.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -405,6 +407,48 @@ h1 {
 
 .checkbox__input:checked+.checkbox__label::after {
 	transform: scale(1);
+}
+
+/* Radio ------------------------------------------------- */
+.options__input {
+	display: none;
+}
+
+.options__input:checked+.options__label::after {
+	transform: scale(1);
+}
+
+.options__label {
+	font-size: 16px;
+	display: flex;
+	line-height: 140%;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.options__label::before {
+	content: '';
+	flex: 0 0 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 1.5px solid #0D63F3;
+	align-self: flex-start;
+	margin: 0px 10px 0px 0px;
+}
+
+.options__label::after {
+	transition: transform 0.3s ease 0s;
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	background-color: #0D63F3;
+	border-radius: 50%;
+	transform: scale(0);
 }
 
 /* Footer ------------------------------------------------------------------------------------------------------------------------------------------- */
