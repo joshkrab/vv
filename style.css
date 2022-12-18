@@ -210,7 +210,7 @@ nav {
 	align-items: center;
 	justify-content: space-evenly;
 	flex-direction: column;
-	transition-duration: 500ms;
+	transition-duration: 600ms;
 }
 
 .burger-icon:hover span {
@@ -219,7 +219,7 @@ nav {
 
 .burger-menu.active {
 	top: 0;
-	transition-duration: 500ms;
+	transition-duration: 600ms;
 }
 
 .burger-nav-list li {
