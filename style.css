@@ -158,6 +158,11 @@ nav {
 	height: 20px;
 }
 
+.auth-email:hover,
+.auth-button:hover {
+	opacity: 0.66;
+}
+
 .auth-button img {
 	width: 100%;
 	object-fit: cover;
